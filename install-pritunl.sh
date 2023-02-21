@@ -10,7 +10,7 @@
 apt update && apt install curl pip -y
 pip install apt-mirror-updater
 sudo apt update && sudo apt -y full-upgrade
-sudo apt install gpg curl gnupg2 software-properties-common apt-transport-https lsb-release ca-certificates
+sudo apt install gpg curl gnupg2 software-properties-common apt-transport-https lsb-release ca-certificates -y
 #Import MongoDB APT repository keys
 curl -fsSL https://www.mongodb.org/static/pgp/server-5.0.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-5.gpg
 # add key
